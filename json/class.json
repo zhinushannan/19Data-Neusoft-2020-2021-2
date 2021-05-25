@@ -1,0 +1,45 @@
+{
+    "class_id": "19数据",
+    "class_teacher": "张三",
+    "student_num": 51,
+    "students": [
+        {
+            "id": 1001,
+            "name": "lucy",
+            "sex": "male",
+            "score": [
+                {
+                    "subject": "语文",
+                    "subject_score": 90
+                }, 
+                {
+                    "subject": "数学",
+                    "subject_score": 91
+                },
+                {
+                    "subject": "外语",
+                    "subject_score": 93
+                }
+            ]
+        },
+        {
+            "id": 1002,
+            "name": "lily",
+            "sex": "male",
+            "score": [
+                {
+                    "subject": "语文",
+                    "subject_score": 90
+                }, 
+                {
+                    "subject": "数学",
+                    "subject_score": 91
+                },
+                {
+                    "subject": "外语",
+                    "subject_score": 93
+                }
+            ]
+        }
+    ]
+}

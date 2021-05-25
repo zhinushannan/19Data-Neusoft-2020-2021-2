@@ -1,0 +1,19 @@
+{
+    "id": 1001,
+    "name": "lucy_new",
+    "sex": "male",
+    "score": [
+        {
+            "subject": "语文",
+            "subject_score": 90
+        }, 
+        {
+            "subject": "数学",
+            "subject_score": 91
+        },
+        {
+            "subject": "外语",
+            "subject_score": 93
+        }
+    ]
+}

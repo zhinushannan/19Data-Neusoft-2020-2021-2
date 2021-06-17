@@ -48,7 +48,8 @@ class Covid:
         json_data = json.loads(src_data)['data']
         data_list = {}
         for i in json_data:
-            data_list[i['dateId']] = {
+            data = {
+                '日期': str(i['dateId']),
                 '累计确诊人数': i['confirmedCount'],
                 '现有确诊人数': i['currentConfirmedCount'],
                 '累计治愈人数': i['curedCount'],
@@ -57,6 +58,7 @@ class Covid:
                 '新增治愈人数': i['curedIncr'],
                 '新增死亡人数': i['deadIncr']
             }
+            data_list[i['dateId']] = data
         return data_list
 
     def save(self, data, fileName):
@@ -104,7 +106,12 @@ class Covid:
             result = self.parse_data(country=country)
             fileName = fileName + '当日数据.json'
         if dataSaveNeeded:
-            self.save(result, fileName)
+            result_data = []
+            keys = list(result.keys())
+            for i in keys:
+                print(result[i])
+                result_data.append(result[i])
+            self.save(result_data, fileName)
         print('数据如下', '\n', result)
 
 

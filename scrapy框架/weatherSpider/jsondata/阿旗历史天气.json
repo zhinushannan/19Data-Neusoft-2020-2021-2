@@ -1,0 +1,20 @@
+{
+    "city": "阿旗历史天气",
+    "weather_history": {
+        "temperature": {
+            "high_avg": "0℃",
+            "low_avg": "0℃",
+            "highest": "0℃",
+            "lowest": "-℃"
+        },
+        "atmosphere": {
+            "avg": null,
+            "best": null,
+            "worst": null
+        },
+        "details": []
+    },
+    "weather_stat": null,
+    "wind_dir_stat": [],
+    "wind_power_stat": []
+}
